@@ -25,8 +25,6 @@ contract InteractionTests is Test {
         FundFundMe fundFundMe = new FundFundMe();
         fundFundMe.fundIt(address(payable(fundMe)));
 
-        console.log(fundMe.getFunder(0));
-
         WithdrawFundMe withdrawFundMe = new WithdrawFundMe();
         withdrawFundMe.withdraw(address(payable(fundMe)));
 
