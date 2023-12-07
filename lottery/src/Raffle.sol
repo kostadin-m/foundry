@@ -33,6 +33,7 @@ import {VRFConsumerBaseV2} from "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBa
  * @dev Implements Chainlink VRFv2
  */
 
+
 contract Raffle is VRFConsumerBaseV2 {
     error Raffle_NotEnoughSend();
     error Raffle_IntervalNotPassed(uint256 _interval);
